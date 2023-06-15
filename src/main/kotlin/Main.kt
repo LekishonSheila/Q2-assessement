@@ -2,7 +2,7 @@ fun main(){
     val story1 = Story("The Lion and the zebra", 10, "Helping others", "Children")
     val story2 = Story("The Tortoise and the Hare", 15, "hardwork", "Children")
 
-val storyteller = StoryTeller("Lekishon Sheila")
+val storyteller = StoryTeller("Kurao Sheila")
 storyteller.addStory(story1)
 storyteller.addStory(story2)
 storyteller.tellStory(story1)
