@@ -8,7 +8,7 @@ storyteller.addStory(story2)
 storyteller.tellStory(story1)
 
 val translator = Translator(listOf(story1, story2), listOf("French", "Spanish"))
-translator.translate(story2, "Kiswahili")
+translator.translate(story2, "British")
 }
 
 
