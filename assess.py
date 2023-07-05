@@ -51,6 +51,7 @@ translator.translate(Book2, "Kiswahili")
 
 
 # Question2
+
 class Recipe:
     def __init__(self, name, country, ingredients, preparation_time, cooking_methods, nutritional_info):
         self.name = name
@@ -59,6 +60,13 @@ class Recipe:
         self.preparation_time = preparation_time
         self.cooking_methods = cooking_methods
         self.nutritional_info = nutritional_info
+    def timeForPreparation(self):
+        if self.preparationtime>=3:
+            return f"this coloured Rice takes a long time to prepare"
+        else:
+            return f"This coloured Rice  can be prepared within a reasonable amount of time"
+    def __str__(self):
+        return f"Name: {self.name}\ncountry: {self.country}\ningredients: {', '.join(self.ingredients)}\npreparation_time: {self.prep_time} minutes\ncooking_method: {self.cooking_method}\nnutrition_info: {self.nutrition_info}"
 
 class MoroccanRecipe(Recipe):
     def __init__(self, name, ingredients, preparation_time, cooking_method, nutritional_info, spice_level):
@@ -84,6 +92,9 @@ moroccan_recipe = MoroccanRecipe(
     "Nice for vitamins",
     "Medium"
 )
+print(moroccan_recipe)
+
+
 
 ethiopian_recipe = EthiopianRecipe(
     "Boiled eggs",
@@ -93,15 +104,20 @@ ethiopian_recipe = EthiopianRecipe(
     "no spicies",
     True
 )
+print(ethiopian_recipe)
 
 nigerian_recipe = NigerianRecipe(
     "Jollof Rice",
     ["rice", "tomatoes", "onion", "pepper", "spices"],
     45,
     "Popular party dish",
-    "spicy",
+   'is_spicy',
     True
 )
+print(nigerian_recipe)
+
+
+
 
 
     

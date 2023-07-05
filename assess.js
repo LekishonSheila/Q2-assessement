@@ -5,7 +5,7 @@
 // The storyteller will have attributes of name and story and will have methods and that of a translator will have 
 // stories and languages and a method.Use a conditional statement to see if the story is transalted
 // or not.
-// Output- The name of the storyteller,the name of the story,the moral lesson and theage group it lies.
+// Output- The name of the storyteller,the name of the story,the moral lesson and the age group it lies.
 
 class AncestralStories {
     constructor(title, length, moralLessons, ageGroups) {
@@ -61,7 +61,7 @@ class AncestralStories {
 
 
 //   Question2
-
+//
 class Recipe {
     constructor(name, country, ingredients, preparationTime, cookingMethod, nutritionalInfo) {
       this.name = name;
@@ -122,7 +122,7 @@ class Recipe {
     60,
     "stew",
     "flavors",
-    true
+    // true
   );
   ethiopianRecipe.includeInjera();
   
@@ -131,11 +131,12 @@ class Recipe {
     ["rice", "tomatoes", "onion", "pepper", "spices"],
     45,
     "Popular party dish",
-    true
+    // true
   );
   nigerianRecipe.setSpicy(true);
 
 console.log(nigerianRecipe);
 console.log(ethiopianRecipe);
 console.log(moroccanRecipe);
+
   
